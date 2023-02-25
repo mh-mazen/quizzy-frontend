@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "notus-angular": {
+    "quizzy-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "allowedCommonJsDependencies": [ "chart.js" ],
-            "outputPath": "dist/notus-angular",
+            "outputPath": "dist/quizzy-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,7 +27,7 @@
             "styles": [
               "src/styles.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-              "src/assets/styles/tailwind.css",
+              "src/assets/styles/tailwind.css"
             ],
             "scripts": []
           },
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "notus-angular:build"
+            "browserTarget": "quizzy-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "notus-angular:build:production"
+              "browserTarget": "quizzy-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "notus-angular:build"
+            "browserTarget": "quizzy-angular:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "notus-angular:serve"
+            "devServerTarget": "quizzy-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "notus-angular:serve:production"
+              "devServerTarget": "quizzy-angular:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "notus-angular"
+  "defaultProject": "quizzy-angular"
 }
